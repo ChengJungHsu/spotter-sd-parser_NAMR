@@ -1,0 +1,20 @@
+2025-09-21T20:59:55.023Z [MS] [INFO] Notecard powered on!
+2025-09-21T20:59:55.023Z [MS] [INFO] Notecard enabled successfully
+2025-09-21T20:59:55.195Z [MS] [INFO] Removing old notecard tx messages
+2025-09-21T21:00:00.105Z [MS] [INFO] Flushing old notecard rx messages
+2025-09-21T21:00:00.132Z [MS] [INFO] Checking for update (and clearing successful one!)
+2025-09-21T21:00:01.105Z [MS] [INFO] Entering Transmit cellular state.
+2025-09-21T21:01:31.285Z [MS] [INFO] Added message(id: 0 len: 146) to queue MS_Q_LEGACY: (1)!
+2025-09-21T21:01:31.289Z [MS] [INFO] Added message(id: 1 len: 86) to queue MS_Q_LEGACY: (2)!
+2025-09-21T21:01:31.289Z [MS] [INFO] Added message(id: 2 len: 37) to queue MS_Q_LEGACY: (3)!
+2025-09-21T21:01:31.292Z [MS] [DEBUG] Has message 0 expired? queuedTime: 106304, now64: 106314, remaining: 86399990
+2025-09-21T21:01:31.296Z [MS] [DEBUG] Sending legacy messages to Notecard.
+2025-09-21T21:01:31.332Z [MS] [DEBUG] Notecard is 2.000000 pct full.
+2025-09-21T21:01:31.332Z [MS] [INFO] Queuing message 0 200100A0
+2025-09-21T21:01:31.679Z [MS] [DEBUG] Has message 1 expired? queuedTime: 106307, now64: 106700, remaining: 86399607
+2025-09-21T21:01:31.679Z [MS] [INFO] Queuing message 1 200100D0
+2025-09-21T21:01:31.750Z [MS] [DEBUG] Has message 2 expired? queuedTime: 106310, now64: 106770, remaining: 86399540
+2025-09-21T21:01:31.750Z [MS] [INFO] Queuing message 2 20010100
+2025-09-21T21:01:31.808Z [MS] [INFO] Setting GPS coordinates lat:23.445633, lon: 120.040108
+2025-09-21T21:01:31.976Z [MS] [DEBUG] Attempting to Sync.
+2025-09-21T21:01:32.000Z [MS] [DEBUG] Waiting for TX

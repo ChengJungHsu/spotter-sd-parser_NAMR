@@ -1,0 +1,103 @@
+2025-09-21T20:59:48.597Z [NCD] [INFO] Initialized.
+2025-09-21T20:59:53.554Z [NCD] [DEBUG] ndbg: {"req":"hub.get"}
+2025-09-21T20:59:53.578Z [NCD] [DEBUG] ndbg: {"sn":"SPOT-31451C","mode":"off","host":"a.notefile.net","product":"com.sofarocean.evan:spotter","device":"dev:867648043586229","inbound":30,"outbound":15}
+2025-09-21T20:59:53.578Z [NCD] [INFO] Card Turned ON ...
+2025-09-21T20:59:53.578Z [NCD] [INFO] Attempting to configure card...
+2025-09-21T20:59:54.585Z [NCD] [DEBUG] ndbg: {"req":"hub.set","product":"com.sofarocean.evan:spotter","sn":"SPOT-31451C","mode":"periodic","outbound":15,"inbound":30,"body":{"agent":"note-c","compiler":"gcc 10.3.1 20210824 (release)","req_interface":"serial","cpu_name":""}}
+2025-09-21T20:59:54.664Z [NCD] [DEBUG] ndbg: {}
+2025-09-21T20:59:54.671Z [NCD] [DEBUG] ndbg: {"req":"dfu.status","on":true,"version":"{\"product\":\"Sunflower\",\"firmware\":\"v2.15.1\",\"ver_major\":2,\"ver_minor\":15,\"ver_patch\":1,\"ver_build\":4188773829}"}
+2025-09-21T20:59:55.023Z [NCD] [DEBUG] ndbg: {"mode":"idle","on":true}
+2025-09-21T20:59:55.023Z [NCD] [INFO] dfu.status set
+2025-09-21T20:59:55.023Z [NCD] [INFO] Notecard Enabled
+2025-09-21T20:59:55.027Z [NCD] [DEBUG] ndbg: {"req":"card.version"}
+2025-09-21T20:59:55.191Z [NCD] [DEBUG] ndbg: {"version":"notecard-6.2.5.16868","device":"dev:867648043586229","name":"Blues Wireless Notecard","sku":"NOTE-WBEX-500","board":"1.11","cell":true,"gps":true,"api":6,"body":{"org":"Blues Wireless","product":"Notecard","target":"r5","version":"notecard-6.2.5","ver_major":6,"ver_minor":2,"ver_patch":5,"ver_build":16868,"built":"Aug 19 2024 17:18:38"}}
+2025-09-21T20:59:55.199Z [NCD] [DEBUG] ndbg: {"req":"file.delete","files":["sofar.qo"]}
+2025-09-21T20:59:55.449Z [NCD] [DEBUG] ndbg: {}
+2025-09-21T20:59:55.453Z [NCD] [DEBUG] ndbg: {"req":"file.delete","files":["sofar_hdr.qo"]}
+2025-09-21T20:59:56.574Z [NCD] [DEBUG] ndbg: {}
+2025-09-21T20:59:56.578Z [NCD] [DEBUG] ndbg: {"req":"file.delete","files":["sofar_bm.qo"]}
+2025-09-21T20:59:56.859Z [NCD] [DEBUG] ndbg: {}
+2025-09-21T20:59:56.859Z [NCD] [INFO] Setting max len to 454
+2025-09-21T20:59:56.863Z [NCD] [DEBUG] ndbg: {"req":"note.template","file":"sofar.qo","body":{"id":24,"iridium_imei":"type_hint"},"length":454}
+2025-09-21T20:59:57.171Z [NCD] [DEBUG] ndbg: {"bytes":25}
+2025-09-21T20:59:57.171Z [NCD] [INFO] Setting max len to 10000
+2025-09-21T20:59:57.773Z [NCD] [DEBUG] ndbg: {"req":"note.template","file":"sofar_hdr.qo","body":{"id":24,"iridium_imei":"type_hint"},"length":10000}
+2025-09-21T20:59:58.546Z [NCD] [DEBUG] ndbg: {"bytes":25}
+2025-09-21T20:59:58.546Z [NCD] [INFO] Setting max len to 10000
+2025-09-21T20:59:59.675Z [NCD] [DEBUG] ndbg: {"req":"note.template","file":"sofar_bm.qo","body":{"id":24,"iridium_imei":"type_hint"},"length":10000}
+2025-09-21T21:00:00.105Z [NCD] [DEBUG] ndbg: {"bytes":25}
+2025-09-21T21:00:00.113Z [NCD] [DEBUG] ndbg: {"req":"note.get","file":"sofar.qi","delete":true}
+2025-09-21T21:00:00.132Z [NCD] [DEBUG] ndbg: {"err":"no notes available {note-noexist}"}
+2025-09-21T21:00:00.140Z [NCD] [DEBUG] ndbg: {"req":"dfu.status"}
+2025-09-21T21:00:00.148Z [NCD] [DEBUG] ndbg: {"mode":"idle","on":true}
+2025-09-21T21:00:00.156Z [NCD] [DEBUG] ndbg: {"req":"hub.set","mode":"off"}
+2025-09-21T21:00:00.464Z [NCD] [DEBUG] ndbg: {}
+2025-09-21T21:00:01.109Z [NCD] [DEBUG] ndbg: {"req":"hub.set","product":"com.sofarocean.evan:spotter","sn":"SPOT-31451C","mode":"periodic","outbound":15,"inbound":30,"body":{"agent":"note-c","compiler":"gcc 10.3.1 20210824 (release)","req_interface":"serial","cpu_name":""}}
+2025-09-21T21:00:01.187Z [NCD] [DEBUG] ndbg: {}
+2025-09-21T21:01:31.300Z [NCD] [DEBUG] ndbg: {"req":"card.status"}
+2025-09-21T21:01:31.332Z [NCD] [DEBUG] ndbg: {"status":"{normal}","storage":2,"time":1758488377,"cell":true}
+2025-09-21T21:01:31.332Z [NCD] [INFO] card.status -> "{normal}"
+2025-09-21T21:01:31.332Z [NCD] [INFO] Attempting to tx id 0 of size 146
+2025-09-21T21:01:31.339Z [NCD] [INFO] Base64 payload to send "3GjQZ6vFtw4CQ0i7Q4ngJZkHzVzuQJmlyRLDIGA7ABehQHwgC7mUYPB9CWJxAAAMNy0VK+0ENri1A6A4iYRkx5ZksAHh9CRQHgH0AdvoAAAAAAAAAAL/JNYhYmDK3CWKAZDHDEVAAMGB2B9AHYDoHgOEQBLCRUBAADhIIhOU4QhInOUp1ZCcYxhOEIQlKMqLPgA="
+2025-09-21T21:01:31.339Z [NCD] [INFO] Base64 len 197
+2025-09-21T21:01:31.347Z [NCD] [DEBUG] ndbg: {"req":"note.add","file":"sofar.qo","sync":false,"body":{"id":0,"iridium_imei":"300534064030740"},"payload":"3GjQZ6vFtw4CQ0i7Q4ngJZkHzVzuQJmlyRLDIGA7ABehQHwgC7mUYPB9CWJxAAAMNy0VK+0ENri1A6A4iYRkx5ZksAHh9CRQHgH0AdvoAAAAAAAAAAL/JNYhYmDK3CWKAZDHDEVAAMGB2B9AHYDoHgOEQBLCRUBAADhIIhOU4QhInOUp1ZCcYxhOEIQlKMqLPgA="}
+2025-09-21T21:01:31.679Z [NCD] [DEBUG] ndbg: {"template":true}
+2025-09-21T21:01:31.679Z [NCD] [INFO] Attempting to tx id 1 of size 86
+2025-09-21T21:01:31.683Z [NCD] [INFO] Base64 payload to send "5GjQZ6vFtw4CQ0i7Q4ngJZgIAqgCAgMBCmdzcG90dGVyCWd2Mi4xNS4xBm5zdW5mbG93ZXJfdjMuMwtGRzHW3uheARpo0GdBBKMBCgQaBAAGAwUAO6Y="
+2025-09-21T21:01:31.683Z [NCD] [INFO] Base64 len 117
+2025-09-21T21:01:31.687Z [NCD] [DEBUG] ndbg: {"req":"note.add","file":"sofar.qo","sync":false,"body":{"id":1,"iridium_imei":"300534064030740"},"payload":"5GjQZ6vFtw4CQ0i7Q4ngJZgIAqgCAgMBCmdzcG90dGVyCWd2Mi4xNS4xBm5zdW5mbG93ZXJfdjMuMwtGRzHW3uheARpo0GdBBKMBCgQaBAAGAwUAO6Y="}
+2025-09-21T21:01:31.750Z [NCD] [DEBUG] ndbg: {"template":true}
+2025-09-21T21:01:31.750Z [NCD] [INFO] Attempting to tx id 2 of size 37
+2025-09-21T21:01:31.750Z [NCD] [INFO] Base64 payload to send "3WjQZ6vFtw4CQ0i7Q4ngJZkHzVzuNGgz1YAAz6NAAACAAgIggA=="
+2025-09-21T21:01:31.753Z [NCD] [INFO] Base64 len 53
+2025-09-21T21:01:31.757Z [NCD] [DEBUG] ndbg: {"req":"note.add","file":"sofar.qo","sync":false,"body":{"id":2,"iridium_imei":"300534064030740"},"payload":"3WjQZ6vFtw4CQ0i7Q4ngJZkHzVzuNGgz1YAAz6NAAACAAgIggA=="}
+2025-09-21T21:01:31.808Z [NCD] [DEBUG] ndbg: {"template":true}
+2025-09-21T21:01:31.816Z [NCD] [DEBUG] ndbg: {"req":"card.location.mode","mode":"fixed","lat":23.44563293457031,"lon":120.0401077270508}
+2025-09-21T21:01:31.976Z [NCD] [DEBUG] ndbg: {"mode":"fixed"}
+2025-09-21T21:01:31.980Z [NCD] [DEBUG] ndbg: {"req":"hub.sync","allow":true}
+2025-09-21T21:01:32.000Z [NCD] [DEBUG] ndbg: {}
+2025-09-21T21:01:37.007Z [NCD] [DEBUG] ndbg: {"req":"note.changes","file":"sofar.qo"}
+2025-09-21T21:01:37.140Z [NCD] [DEBUG] ndbg: {"notes":{"RI121":{"body":{"format":2,"template_body":"{\"id\":24,\"iridium_imei\":\"type_hint\"}","template_payload":454,"storage":"file:data/sofar-qo.000"},"payload":"iAPweAEoAFXBaWz0Z2cYZ9vdYxLKZxYAAAAADwAzMDA1MzQwNjQwMzA3NDCS3GjQZ6vFtw4CQ0i7Q4ngJZkHzVzuQJmlyRLDIGA7ABehQHwgC7mUYPB9CWJxAAAMNy0VK+0ENri1A6A4iYRkx5ZksAHh9CRQHgH0AdvoAAABZvBEAAL/JNYhYmDK3CWKAZDHDEVAAMGB2B9AHYDoHgOEQBLCRUBAADhIIhOU4QhInOUp1ZCcYxhOEIQlKMqLPgABKABXVZ/jLrsABAEASrsACFbkaDa7APBOmAgCqAICAwEKZ3Nwb3R0ZXIJZ3YyLjE1LjEGbnN1bmZsb3dlcl92My4zC0ZHMdbe6F4BGmjQZ0EEowEKBBoEAAYDBQA7pgEoAFgfOh/1Zzk6AAJOfwAEJd06fwAlOjw0aDPVgADPo0AAAIACAiCA","time":1758488480}}}
+2025-09-21T21:01:42.152Z [NCD] [DEBUG] ndbg: {"req":"note.changes","file":"sofar.qo"}
+2025-09-21T21:01:42.265Z [NCD] [DEBUG] ndbg: {"notes":{"RI121":{"body":{"format":2,"template_body":"{\"id\":24,\"iridium_imei\":\"type_hint\"}","template_payload":454,"storage":"file:data/sofar-qo.000"},"payload":"iAPweAEoAFXBaWz0Z2cYZ9vdYxLKZxYAAAAADwAzMDA1MzQwNjQwMzA3NDCS3GjQZ6vFtw4CQ0i7Q4ngJZkHzVzuQJmlyRLDIGA7ABehQHwgC7mUYPB9CWJxAAAMNy0VK+0ENri1A6A4iYRkx5ZksAHh9CRQHgH0AdvoAAABZvBEAAL/JNYhYmDK3CWKAZDHDEVAAMGB2B9AHYDoHgOEQBLCRUBAADhIIhOU4QhInOUp1ZCcYxhOEIQlKMqLPgABKABXVZ/jLrsABAEASrsACFbkaDa7APBOmAgCqAICAwEKZ3Nwb3R0ZXIJZ3YyLjE1LjEGbnN1bmZsb3dlcl92My4zC0ZHMdbe6F4BGmjQZ0EEowEKBBoEAAYDBQA7pgEoAFgfOh/1Zzk6AAJOfwAEJd06fwAlOjw0aDPVgADPo0AAAIACAiCA","time":1758488480}}}
+2025-09-21T21:01:47.273Z [NCD] [DEBUG] ndbg: {"req":"note.changes","file":"sofar.qo"}
+2025-09-21T21:01:47.394Z [NCD] [DEBUG] ndbg: {"notes":{"RI121":{"body":{"format":2,"template_body":"{\"id\":24,\"iridium_imei\":\"type_hint\"}","template_payload":454,"storage":"file:data/sofar-qo.000"},"payload":"iAPweAEoAFXBaWz0Z2cYZ9vdYxLKZxYAAAAADwAzMDA1MzQwNjQwMzA3NDCS3GjQZ6vFtw4CQ0i7Q4ngJZkHzVzuQJmlyRLDIGA7ABehQHwgC7mUYPB9CWJxAAAMNy0VK+0ENri1A6A4iYRkx5ZksAHh9CRQHgH0AdvoAAABZvBEAAL/JNYhYmDK3CWKAZDHDEVAAMGB2B9AHYDoHgOEQBLCRUBAADhIIhOU4QhInOUp1ZCcYxhOEIQlKMqLPgABKABXVZ/jLrsABAEASrsACFbkaDa7APBOmAgCqAICAwEKZ3Nwb3R0ZXIJZ3YyLjE1LjEGbnN1bmZsb3dlcl92My4zC0ZHMdbe6F4BGmjQZ0EEowEKBBoEAAYDBQA7pgEoAFgfOh/1Zzk6AAJOfwAEJd06fwAlOjw0aDPVgADPo0AAAIACAiCA","time":1758488480}}}
+2025-09-21T21:01:52.433Z [NCD] [DEBUG] ndbg: {"req":"note.changes","file":"sofar.qo"}
+2025-09-21T21:01:52.550Z [NCD] [DEBUG] ndbg: {"notes":{"RI121":{"body":{"format":2,"template_body":"{\"id\":24,\"iridium_imei\":\"type_hint\"}","template_payload":454,"storage":"file:data/sofar-qo.000"},"payload":"iAPweAEoAFXBaWz0Z2cYZ9vdYxLKZxYAAAAADwAzMDA1MzQwNjQwMzA3NDCS3GjQZ6vFtw4CQ0i7Q4ngJZkHzVzuQJmlyRLDIGA7ABehQHwgC7mUYPB9CWJxAAAMNy0VK+0ENri1A6A4iYRkx5ZksAHh9CRQHgH0AdvoAAABZvBEAAL/JNYhYmDK3CWKAZDHDEVAAMGB2B9AHYDoHgOEQBLCRUBAADhIIhOU4QhInOUp1ZCcYxhOEIQlKMqLPgABKABXVZ/jLrsABAEASrsACFbkaDa7APBOmAgCqAICAwEKZ3Nwb3R0ZXIJZ3YyLjE1LjEGbnN1bmZsb3dlcl92My4zC0ZHMdbe6F4BGmjQZ0EEowEKBBoEAAYDBQA7pgEoAFgfOh/1Zzk6AAJOfwAEJd06fwAlOjw0aDPVgADPo0AAAIACAiCA","time":1758488480}}}
+2025-09-21T21:01:57.679Z [NCD] [DEBUG] ndbg: {"req":"note.changes","file":"sofar.qo"}
+2025-09-21T21:01:57.882Z [NCD] [DEBUG] ndbg: invalid data received on serial port from notecard
+2025-09-21T21:01:57.882Z [NCD] [DEBUG] ndbg: {"err":"serial communications error {io}"}
+2025-09-21T21:01:58.632Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:01:59.632Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:00.632Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:01.632Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:02.632Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:03.632Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:04.632Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:05.632Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:06.632Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:07.632Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:08.878Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:09.878Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:10.878Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:11.878Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:12.878Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:13.878Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:14.878Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:15.878Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:16.878Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:17.878Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:19.128Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:20.128Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:21.128Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:22.128Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:23.128Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:24.128Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:25.128Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:26.128Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:27.128Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:02:28.128Z [NCD] [DEBUG] ndbg: notecard not responding
+2025-09-21T21:03:03.621Z [NCD] [WARNING] AUX TX didn't go high in 30000 ms!s
+2025-09-21T21:03:38.613Z [NCD] [WARNING] AUX TX didn't go high in 30000 ms!s
+2025-09-21T21:04:13.609Z [NCD] [WARNING] AUX TX didn't go high in 30000 ms!s
+2025-09-21T21:04:48.601Z [NCD] [WARNING] AUX TX 

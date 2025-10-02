@@ -1,0 +1,30 @@
+2025-09-21T20:59:45.160Z [SYS] [INFO] Loading hardware config
+2025-09-21T20:59:45.503Z [SYS] [INFO] Init values CALR: 000000BC CALM: 188, CALP: 0
+2025-09-21T20:59:45.503Z [SYS] [INFO] samplingAlignmentMin set to 5
+2025-09-21T20:59:45.503Z [SYS] [INFO] GpsPowerManager disabled, starting up GPS normally.
+2025-09-21T20:59:48.515Z [SYS] [INFO] Initialize sensors
+2025-09-21T20:59:48.582Z [SYS] [INFO] Starting barometer filter with parameters:
+size: 200
+percentile: 10.00
+downsamplingRate: 50
+alpha: 1.0000387
+2025-09-21T20:59:48.597Z [SYS] [INFO] APP_NAME: spotter
+2025-09-21T20:59:48.597Z [SYS] [INFO] UID: 2036303258475006002A001C
+2025-09-21T20:59:48.597Z [SYS] [INFO] FW Version: v2.15.1
+2025-09-21T20:59:48.597Z [SYS] [INFO] GIT SHA: F9AB9DC5
+2025-09-21T20:59:48.597Z [SYS] [INFO] Build ID: 4731d6dee85e89ba23fa62c8d8f32c54a8bb2c18
+2025-09-21T20:59:48.597Z [SYS] [INFO] BSP: sunflower_v3.3
+2025-09-21T20:59:48.597Z [SYS] [INFO] Reset Reason: Invalid reset or first power on since flashing
+2025-09-21T20:59:48.601Z [SYS] [INFO] Main Deck HW Version: 02
+2025-09-21T20:59:48.601Z [SYS] [INFO] Upper Deck HW Version: 02
+2025-09-21T20:59:48.601Z [SYS] [INFO] Bootloader Information:
+  Version: v2.15.1
+  SHA: F9AB9DC5
+  Signature support: 1
+  Encrytion support: 0
+  Swap Type: NONE
+2025-09-21T20:59:48.937Z [SYS] [INFO] Iridium IMEI: 300534064030740
+2025-09-21T20:59:55.191Z [SYS] [INFO] Notecard IMEI: 867648043586229
+2025-09-21T20:59:55.191Z [SYS] [INFO] Notecard sku: NOTE-WBEX-500
+2025-09-21T20:59:55.191Z [SYS] [INFO] Notecard Board Version: 1.11
+2025-09-21T20:59:55.191Z [SYS] [INFO] Notecard Firmware Version: notecard-6.2.5.16868

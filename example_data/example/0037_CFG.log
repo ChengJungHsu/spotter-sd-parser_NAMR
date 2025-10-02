@@ -1,0 +1,146 @@
+2025-09-21T20:59:45.160Z [CFG] [INFO] Initializing sysCfg
+2025-09-21T20:59:45.160Z [CFG] [INFO] Loading sysCfg
+2025-09-21T20:59:45.164Z [CFG] [INFO] HWCFG: 
+ * hwVersion: 12
+ * deviceName: SPOT-31451C
+ * hasBridge: 1
+ * bridgeHardwareVersion: 0
+ * hasSST: 0
+ * hasBaro: 1
+ * baroOffsetPa: -110
+ * baroSignature: 1796256048
+ * baroCalTime: 1701712581
+ * hasCellular: 1
+ * sstOffsetCentiDegC: 0
+ * sstSignature: 0
+ * sstCalTime: 0
+2025-09-21T20:59:45.164Z [CFG] [INFO] Current configuration:
+rstr=16
+rctls=2
+hwv=12
+hbtldr=1
+bhss=1
+bhes=0
+autup=1
+yolo=0
+imen=0
+imch=24
+imgto=3
+imito=5
+battcrit=2900
+batten=3100
+mod=3
+ali=1
+fmd=60
+dwl=0
+smrr=1
+pmpb=7
+cde=1
+mfmet=0
+sde=2
+sddelay=10
+sdcgb=31
+sdup=4
+gpsp=400
+gpsasr=50
+gpsrtc=1
+gpsdt=3
+hcim=60
+boc=1000
+sov=75
+raind=5000
+raini=0
+rainrec=0
+hac=1
+cen=1
+cere=1
+cmr=24
+cdfut=180
+nsku=2
+cimeit=86764804
+cimeisn=3586229
+insp=30
+onsp=15
+hrpm=1
+glpmen=0
+glpmw=10
+hab=1
+bhv=0
+bre=1
+bdt=3100
+brd=400
+maxmont=180
+minmoft=600
+ict=0
+imss=0
+ibhm=60
+ibtv=3500
+maxcmont=10
+mincmoft=10
+cmfbtm=30
+hasst=0
+ssti=1000
+sstlr=60
+sstoff=0
+ssig=0
+scalt=0
+habar=1
+bopa=-110
+bsig=1796256048
+bcalt=1701712581
+bari=200
+barfs=200
+barfds=50
+barfpct=10
+barfa=387
+barlr=60
+htui=1000
+htulr=60
+pwrlr=30
+lsi=60
+schki=1800
+vle=1
+vledonms=75
+vledoffms=2425
+vlednp=1
+vledpgdms=0
+vleimax=500
+vleimin=180
+lnmea=4
+lgpsc=4
+lgpsl=28
+lgmn=20
+lirid=28
+lrain=4
+lrdb=4
+lpipe=4
+lfilt=1
+logn=0
+lfft=0
+lspec=0
+lspeca=2
+lhdrcsv=0
+lhdr=28
+lerr=28
+lbri=20
+lbsd=20
+lms=29
+lser=11
+ltask=4
+lmem=4
+lcfg=28
+lmic=12
+li2c=12
+lspi=12
+lfdbg=4
+lsys=28
+lmflt=4
+lorch=4
+lgpm=4
+lbaror=4
+lbarof=20
+lmsg=20
+lubx=12
+lnote=21
+ncdcl=1440
+plsl=0

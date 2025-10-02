@@ -1,0 +1,30 @@
+2025-09-21T20:59:45.160Z [ERR] [INFO] IoExpErrorState changed from N/A to OK
+2025-09-21T20:59:45.164Z [ERR] [INFO] BspErrorState changed from N/A to OK
+2025-09-21T20:59:45.347Z [ERR] [INFO] PotErrorState changed from N/A to OK
+2025-09-21T20:59:45.351Z [ERR] [INFO] ChargerErrorState changed from N/A to OK
+2025-09-21T20:59:45.480Z [ERR] [INFO] busmonErrorState changed from N/A to OK
+2025-09-21T20:59:45.484Z [ERR] [INFO] SolarErrorState changed from N/A to LOW
+2025-09-21T20:59:45.484Z [ERR] [INFO] BattErrorState changed from N/A to OK
+2025-09-21T20:59:45.484Z [ERR] [INFO] BusVErrorState changed from N/A to OK
+2025-09-21T20:59:45.484Z [ERR] [INFO] BusIErrorState changed from N/A to OK
+2025-09-21T20:59:48.507Z [ERR] [INFO] GpsErrorState changed from N/A to NO_SIGNAL
+2025-09-21T20:59:48.515Z [ERR] [INFO] OrchErrorState changed from N/A to OK
+2025-09-21T20:59:48.582Z [ERR] [INFO] HtuErrorState changed from N/A to OK
+2025-09-21T20:59:48.593Z [ERR] [INFO] BaroErrorState changed from N/A to OK
+2025-09-21T20:59:49.296Z [ERR] [INFO] IridiumErrorState changed from N/A to OK
+2025-09-21T20:59:49.324Z [ERR] [INFO] Visibility LEDErrorState changed from N/A to OK
+2025-09-21T20:59:53.617Z [ERR] [INFO] bridgeErrorState changed from N/A to OK
+2025-09-21T21:00:00.148Z [ERR] [INFO] CellularErrorState changed from N/A to OK
+2025-09-21T21:01:31.253Z [ERR] [INFO] GpsErrorState changed from NO_SIGNAL to OK
+2025-09-21T21:01:31.289Z [ERR] [INFO] OrchErrorState changed from OK to SCHEDULE_SAMPLE_ALIGNMENT
+2025-09-21T21:01:31.296Z [ERR] [INFO] Cellular SignalErrorState changed from N/A to CONNECTING
+2025-09-21T21:06:25.941Z [ERR] [INFO] BaroErrorState changed from OK to READ_ERR
+2025-09-21T21:06:27.781Z [ERR] [INFO] BaroErrorState changed from READ_ERR to OK
+2025-09-21T21:06:30.140Z [ERR] [INFO] BaroErrorState changed from OK to READ_ERR
+2025-09-21T21:06:32.941Z [ERR] [INFO] BaroErrorState changed from READ_ERR to OK
+2025-09-21T21:07:04.335Z [ERR] [INFO] BaroErrorState changed from OK to READ_ERR
+2025-09-21T21:07:05.734Z [ERR] [INFO] BaroErrorState changed from READ_ERR to OK
+2025-09-21T21:07:06.136Z [ERR] [INFO] BaroErrorState changed from OK to READ_ERR
+2025-09-21T21:07:08.773Z [ERR] [INFO] BaroErrorState changed from READ_ERR to OK
+2025-09-21T21:07:10.933Z [ERR] [INFO] BaroErrorState changed from OK to READ_ERR
+2025-09-21T21:07:23.753Z [ERR] [INFO] B
