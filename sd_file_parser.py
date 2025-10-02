@@ -429,20 +429,24 @@ def main( path = None , outpath=None, outputFileType='CSV',
     #The filetypes to concatenate
     if suffixes is None:
         suffixes = [
-            'FLT',
+            #'FLT',
             'SPC',
             'SYS',
             'LOC',
             'GPS',
             'SST',
+            'SMD',
+            'BARO',
         ]
 
     if parsing is None:
         parsing = [
-            'FLT',
+            #'FLT',
             'SPC',
             'LOC',
             'SST',
+            'SMD',
+            'BARO',
         ]
 
     if any( [ version['number'] < 3 for version in versions ] ):
@@ -457,7 +461,7 @@ def main( path = None , outpath=None, outputFileType='CSV',
             collection.remove('SST')
 
     outFiles    = {'FLT':'displacement','SPC':'spectra','SYS':'system',
-                       'LOC':'location','GPS':'gps','SST':'sst'}
+                       'LOC':'location','GPS':'gps','SST':'sst','SMD':'soft2','BARO':'baro'}
 
     if path is None:
         #
@@ -550,6 +554,8 @@ def main( path = None , outpath=None, outputFileType='CSV',
                     'LOC',
                     'GPS',
                     'SST',
+                    'SMD',
+                    'BARO',
                 ]:
                     #
                     #parse the mean location/displacement files; 
@@ -614,6 +620,7 @@ def parseLocationFiles( inputFileName=None, outputFileName='displacement.CSV',
     """
     import pandas as pd
     import numpy as np
+    import io
     #
 
     fname,ext = os.path.splitext(outputFileName)
@@ -663,6 +670,71 @@ def parseLocationFiles( inputFileName=None, outputFileName='displacement.CSV',
         #
         data = pd.read_csv(inputFileName,
                            index_col=False, usecols=(0, 1))
+        data = data.apply(pd.to_numeric,errors='coerce')
+        data = data.values
+
+        msk = np.isnan(data[:, 0])
+        data = data[~msk, :]
+        datetime = epochToDateArray(data[:, 0])
+        data = data[:, 1]
+        data = np.concatenate((datetime, data[:,None]), axis=1)
+
+        fmt = '%i,' * 7 + '%5.2f'
+        header = header + ', T (deg. Celsius)'
+    elif kind=='BARO':
+        #
+        # Read the data using pandas, and convert to numpy
+        #
+        data = pd.read_csv(inputFileName,
+                           index_col=False, usecols=(0, 1))
+        data = data.apply(pd.to_numeric,errors='coerce')
+        data = data.values
+
+        msk = np.isnan(data[:, 0])
+        data = data[~msk, :]
+        datetime = epochToDateArray(data[:, 0])
+        data = data[:, 1]
+        data = np.concatenate((datetime, data[:,None]), axis=1)
+
+        fmt = '%i,' * 7 + '%5.2f'
+        header = header + ', pressure (millibar)'
+    elif kind=='SMD':
+        #
+        # Read the data using pandas, and convert to numpy
+        #
+        column_names = ["epoch", "link", "logtype", "data", "pulse", "value"]
+        cleaned_data_string = clean_data_stream(inputFileName)
+        data_buffer = io.StringIO(cleaned_data_string)
+        df = pd.read_csv(
+            data_buffer,
+            sep=',',
+            header=None,
+            names=column_names
+        )
+        # save RBR depth sensor's microbar to derive water depth
+        outputFileName_RBRD = 'rbrd.' + extensions(outputFileType)
+        dat = df[df["data"]=="RBRD"]
+        data = dat.loc[:,["epoch","value"]]
+        data["value"]=data["value"]
+        data = data.apply(pd.to_numeric,errors='coerce')
+        data = data.values
+
+        msk = np.isnan(data[:, 0])
+        data = data[~msk, :]
+        datetime = epochToDateArray(data[:, 0])
+        data = data[:, 1]
+        data = np.concatenate((datetime, data[:,None]), axis=1)
+
+        fmt = '%i,' * 7 + '%7.2f'
+        header = header + ', pressure (microbar)'
+
+        np.savetxt(outputFileName_RBRD ,
+            data ,fmt=fmt,
+            header=header)
+        #
+        dat = df[df["data"]=="SOFT2"]
+        data = dat.loc[:,["epoch","value"]]
+        data["value"]=data["value"]/100
         data = data.apply(pd.to_numeric,errors='coerce')
         data = data.values
 
@@ -1616,6 +1688,21 @@ def applyfilter( data , kind , versionNumber, IIRWeightType ):
             #
 
     return res
+#
+def clean_data_stream(file_path, skip_string="BSYS"):
+    """
+    Reads the file line-by-line, skips the first line (header), and filters 
+    out any lines containing the specified string. Returns a list of strings.
+    """
+    filtered_lines = []
+    with open(file_path, 'r') as f:
+        next(f)
+        
+        for line in f:
+            if skip_string not in line:
+                filtered_lines.append(line)
+                
+    return "".join(filtered_lines)
 
 First = True
 if __name__ == "__main__":
